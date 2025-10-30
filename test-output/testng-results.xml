@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-29T16:18:42 IST" name="Suite" finished-at="2025-10-29T16:19:16 IST" duration-ms="34514">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Gmail.Users.Runner.TestRunner2@5aebe890]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-10-29T16:18:42 IST" name="Test" finished-at="2025-10-29T16:19:16 IST" duration-ms="34514">
+      <class name="com.Gmail.Users.Runner.TestRunner2">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.Gmail.Users.Runner.TestRunner2@5aebe890]" started-at="2025-10-29T16:18:42 IST" name="setUpClass" finished-at="2025-10-29T16:18:43 IST" duration-ms="1081" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7cac93fe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Gmail.Users.Runner.TestRunner2@5aebe890]" started-at="2025-10-29T16:18:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-29T16:18:57 IST" duration-ms="13786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct username and correct password using DataTable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Gmail.Users.Runner.TestRunner2@5aebe890]" started-at="2025-10-29T16:18:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-29T16:19:04 IST" duration-ms="7138" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct username and correct password using DataTable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [117de3b9-975e-49ea-a405-3b7148bc9ef9, findElement {value=userName, using=name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28888, moz:profile: C:\Users\pmattave\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 117de3b9-975e-49ea-a405-3b7148bc9ef9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [117de3b9-975e-49ea-a405-3b7148bc9ef9, findElement {value=userName, using=name}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 144.0.2, moz:accessibilityChecks: false, moz:buildID: 20251027123126, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 28888, moz:profile: C:\Users\pmattave\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 117de3b9-975e-49ea-a405-3b7148bc9ef9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.Gmail.Users.Pages.UserInteraction3.getlogin(UserInteraction3.java:65)
+at com.Gmail.Users.StepDef.logintours.i_insert(logintours.java:43)
+at ✽.I insert "mercury" and "mercury"(file:///C:/Users/pmattave/Desktop/CapgDemo3/./src/test/java/com/Gmail/Users/Features/tourslogin.feature:45)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.Gmail.Users.Runner.TestRunner2@5aebe890]" started-at="2025-10-29T16:19:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-29T16:19:16 IST" duration-ms="11960" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct username and correct password using DataTable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.Gmail.Users.Runner.TestRunner2@5aebe890]" started-at="2025-10-29T16:19:16 IST" name="tearDownClass" finished-at="2025-10-29T16:19:16 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.Gmail.Users.Runner.TestRunner2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
